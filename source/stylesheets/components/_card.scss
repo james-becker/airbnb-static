@@ -1,0 +1,39 @@
+.img-small {
+  height: 100px;
+  width: 100px;
+}
+
+/*.card:first-child {
+  top
+}*/
+
+.card {
+  color: white;
+  height: 240px;
+  text-shadow: 1px 1px 2px #3e3e3e;
+  border-radius: 4px;
+  padding: 10px;
+  background-size: cover;
+  margin: 10px 0 10px 0;
+  position: relative;
+}
+
+.card h2 {
+  font-weight: 500;
+  position: absolute;
+  top: 10;
+  left: 10;
+}
+
+.card h1 {
+  font-size: 24px;
+  position: absolute;
+  left: 10px;
+  bottom: 50px;
+}
+
+.card p {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}

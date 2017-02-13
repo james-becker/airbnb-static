@@ -1,10 +1,190 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Airbnb Home
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
-</div>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Airbnb home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:300,400,500,700">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body>
+
+     <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('background.jpg');">
+      <div class="banner-content">
+        <h1>Some Stuff</h1>
+        <p>Very cool stuff, useful and smart</p>
+        <a class="btn btn-primary btn-lg">GET IT</a>
+      </div>
+    </div>
+    <!-- Your features code -->
+    <div class="wrapper wrapper-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-3">
+            <card>
+              <img class="img-small" src="./images/globe.png" alt="globe">
+              <h2>Discover the World</h2>
+              <p>The earth is your new home.</p>
+            </card>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-3">
+            <card>
+              <img class="img-small" src="./images/dollar.png" alt="globe">
+              <h2>Discover the World</h2>
+              <p>The earth is your new home.</p>
+            </card>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-3">
+            <card>
+              <img class="img-small" src="./images/beer.png" alt="globe">
+              <h2>Discover the World</h2>
+              <p>The earth is your new home.</p>
+            </card>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-3">
+            <card>
+              <img class="img-small" src="./images/heart.png" alt="globe">
+              <h2>Discover the World</h2>
+              <p>The earth is your new home.</p>
+            </card>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper wrapper-grey text-center">
+      <h2>Your next trip</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: url('./images/card-paris.jpg')">
+              <h2>Paris</h2>
+              <img src="./images/romain.jpeg" class="avatar">
+              <h1>Seb's home</h1>
+              <p>Charming room</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: url('./images/card-brussels.jpeg')">
+              <h2>Brussels</h2>
+              <img src="./images/seb.jpg" class="avatar">
+              <h1>Lovely place</h1>
+              <p>Super awesome</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: url('./images/card-london.jpeg')">
+              <h2>London</h2>
+              <img src="./images/anne.jpg" class="avatar">
+              <h1>Awesome digs</h1>
+              <p>Really cool</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Your newsletter code -->
+
+    <div class="wrapper wrapper-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-4 col-sm-4 text-center">
+            <h2>Get news from us</h2>
+            <p>Leave us your mail and get news from us</p>
+            <form class="form-inline">
+              <input type="text" class="form-control" placeholder="John Doe">
+            </input>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="map" style="width: 100%; height: 400px;"></div>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script type="text/javascript">
+  var myLatlng = new google.maps.LatLng(48.8655909, 2.378983);
+
+  var myOptions = {
+    zoom: 16,
+    center: myLatlng,
+    scrollwheel: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: [{"featureType":"all","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"all","elementType":"labels","stylers":[{"visibility":"off"},{"saturation":"-100"}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40},{"visibility":"off"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"off"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#4d6059"}]},{"featureType":"landscape","elementType":"geometry.stroke","stylers":[{"color":"#4d6059"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"color":"#4d6059"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"lightness":21}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#4d6059"}]},{"featureType":"poi","elementType":"geometry.stroke","stylers":[{"color":"#4d6059"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#7f8d89"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#7f8d89"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#7f8d89"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#7f8d89"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#7f8d89"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#7f8d89"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"#7f8d89"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#7f8d89"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#2b3638"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2b3638"},{"lightness":17}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#24282b"}]},{"featureType":"water","elementType":"geometry.stroke","stylers":[{"color":"#24282b"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels.icon","stylers":[{"visibility":"off"}]}] // TODO: replace [] by array from https://snazzymaps.com/
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: "You are here!"
+  });
+  </script>
+
+
+
+
+
+
+  <!-- Your footer code -->
+
+  <div class="footer wrapper wrapper-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4">
+          <ul class="social list-inline">
+            <li>
+              <a href="" class="fa fa-youtube fa-2x"></a>
+            </li>
+            <li>
+              <a href="" class="fa fa-instagram fa-2x"></a>
+            </li>
+            <li>
+              <a href="" class="fa fa-facebook fa-2x"></a>
+            </li>
+            <li>
+              <a href="" class="fa fa-twitter fa-2x"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-8 text-right">
+          <p>
+            This is an Airbnb Home challenge.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
