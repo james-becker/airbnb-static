@@ -5,14 +5,14 @@
 }
 
 .footer {
-  color: #d3d3d3;
+  color: $color3;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .footer a {
-  color: #d3d3d3;
+  color: $color3;
 }
 
 .footer li {
