@@ -26,7 +26,7 @@ title: Airbnb Home
       <div class="banner-content">
         <h1>Some Stuff</h1>
         <p>Very cool stuff, useful and smart</p>
-        <a class="btn btn-primary btn-lg">GET IT</a>
+        <%= link_to "GET IT", "http://www.airbnb.com", class: "btn btn-primary btn-lg" %>
       </div>
     </div>
     <!-- Your features code -->
@@ -35,28 +35,28 @@ title: Airbnb Home
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-lg-3">
             <card>
-              <img class="img-small" src="./images/globe.png" alt="globe">
+              <%= image_tag "globe.png", class: "img-small" %>
               <h2>Discover the World</h2>
               <p>The earth is your new home.</p>
             </card>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-3">
             <card>
-              <img class="img-small" src="./images/dollar.png" alt="globe">
+              <%= image_tag "dollar.png", class: "img-small" %>
               <h2>Discover the World</h2>
               <p>The earth is your new home.</p>
             </card>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-3">
             <card>
-              <img class="img-small" src="./images/beer.png" alt="globe">
+              <%= image_tag "beer.png", class: "img-small" %>
               <h2>Discover the World</h2>
               <p>The earth is your new home.</p>
             </card>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-3">
             <card>
-              <img class="img-small" src="./images/heart.png" alt="globe">
+              <%= image_tag "heart.png", class: "img-small" %>
               <h2>Discover the World</h2>
               <p>The earth is your new home.</p>
             </card>
@@ -72,7 +72,7 @@ title: Airbnb Home
           <div class="col-xs-12 col-sm-4">
             <div class="card" style="background-image: url('./images/card-paris.jpg')">
               <h2>Paris</h2>
-              <img src="./images/romain.jpeg" class="avatar">
+              <%= image_tag "romain.jpg", class: "avatar" %>
               <h1>Seb's home</h1>
               <p>Charming room</p>
             </div>
@@ -80,7 +80,7 @@ title: Airbnb Home
           <div class="col-xs-12 col-sm-4">
             <div class="card" style="background-image: url('./images/card-brussels.jpeg')">
               <h2>Brussels</h2>
-              <img src="./images/seb.jpg" class="avatar">
+              <%= image_tag "seb.jpg", class: "avatar" %>
               <h1>Lovely place</h1>
               <p>Super awesome</p>
             </div>
@@ -88,7 +88,7 @@ title: Airbnb Home
           <div class="col-xs-12 col-sm-4">
             <div class="card" style="background-image: url('./images/card-london.jpeg')">
               <h2>London</h2>
-              <img src="./images/anne.jpg" class="avatar">
+              <%= image_tag "anne.jpg", class: "avatar" %>
               <h1>Awesome digs</h1>
               <p>Really cool</p>
             </div>
@@ -96,14 +96,6 @@ title: Airbnb Home
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
 
     <!-- Your newsletter code -->
 
@@ -159,16 +151,16 @@ title: Airbnb Home
         <div class="col-xs-4">
           <ul class="social list-inline">
             <li>
-              <a href="" class="fa fa-youtube fa-2x"></a>
+              <%= link_to "", "#", class: "fa fa-youtube fa-2x" %>
             </li>
             <li>
-              <a href="" class="fa fa-instagram fa-2x"></a>
+              <%= link_to "", "#", class: "fa fa-instagram fa-2x" %>
             </li>
             <li>
-              <a href="" class="fa fa-facebook fa-2x"></a>
+              <%= link_to "", "#", class: "fa fa-facebook fa-2x" %>
             </li>
             <li>
-              <a href="" class="fa fa-twitter fa-2x"></a>
+              <%= link_to "", "#", class: "fa fa-twitter fa-2x" %>
             </li>
           </ul>
         </div>
